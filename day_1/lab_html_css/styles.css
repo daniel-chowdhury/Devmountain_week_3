@@ -1,0 +1,49 @@
+h1{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    font-style: italic;
+}
+p2{
+    font-size: 20px;
+    font-style: italic;
+    text-align:right;
+    margin-left: 5pt;
+}
+button{
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+}
+
+img{
+    margin-right: 15px;
+    float: left;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    width: 20%;
+}
+
+
+.center2 {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
