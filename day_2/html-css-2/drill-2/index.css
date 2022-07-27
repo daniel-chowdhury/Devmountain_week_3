@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    height: 100vh;
+    width: 100vw
+}
+
+.solid {
+    border: solid 3px black;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    height: 30%;
+    width: 85%;
+}
+
+.dotted {
+    border: dotted 3px black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 85%;
+}
+
+.shadow {
+    background-color: white;
+    border: 2px solid black;
+    height: 30%;
+    width: 50%;
+    box-shadow: 5px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple{
+    background-color: purple;
+    position: static;
+    width: 5rem;
+    height: 10rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.green{
+    background-color: green;
+    width: 50%;
+    height: 80%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.circle{
+    height: 10rem;
+    width: 10rem;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.yellow{
+    background-color: yellow;
+    box-shadow: 5px 5px gray;
+    width: 70%;
+    height: 80%;
+}
+
+p{
+    font-size: 500%;
+}
+

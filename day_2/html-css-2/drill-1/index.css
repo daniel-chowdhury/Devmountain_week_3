@@ -1,0 +1,45 @@
+:root {
+    /* colors */
+    --headd-heightt: 15vh;
+    --sidebar-width: 12vh;
+}
+
+header {
+    color: black;
+    height: var(--headd-heightt);
+    width: 100vw;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    height: 2em;
+    width: calc(100% - 24vh);
+    background-color: dimgray;
+    position: absolute;
+    bottom: 0;
+    left: var(--sidebar-width)
+    
+
+}
+
+#sidebar_left {
+    position: absolute;
+    height: calc(100vh - var(--headd-heightt));
+    width: var(--sidebar-width);
+    background-color: rebeccapurple;
+    left: 0;
+    top: var(--headd-heightt);
+}
+
+#sidebar_right {
+    position: absolute;
+    height: calc(100vh - var(--headd-heightt));
+    width: var(--sidebar-width);
+    background-color: rebeccapurple;
+    right: 0;
+    top: var(--headd-heightt);
+}
+
