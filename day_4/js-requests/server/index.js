@@ -14,8 +14,8 @@ app.get('/animals', (req, res) => {
     res.send(['Lions', 'Tigers', 'Bears'])
 })
 
-app.get('/repeat/:repeat', (req, res) => {
-    res.send(`Success!  ${req.params.repeat} was sent as a param!`)
+app.get('/rept/:repeeeat', (req, res) => {
+    res.send(`Success!  ${req.params.repeeeat} was sent as a param!`)
 })
 
 app.get('/query-test', (req, res) => {
@@ -28,7 +28,7 @@ app.get('/query-test', (req, res) => {
         res.send({
             message: 'You sent more than 1 query!',
             queries: query,
-        })
+    })
     } 
     }
 })

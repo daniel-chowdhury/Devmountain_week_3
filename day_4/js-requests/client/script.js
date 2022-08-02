@@ -109,7 +109,7 @@ document.getElementById('animals-button').addEventListener('click', ohMy)
 */
 
 const repeatMyParam = (event) => {
-    axios.get('http://localhost:3000/repeat/atlanta').then((res) => {
+    axios.get('http://localhost:3000/rept/atlanta').then((res) => {
         console.log(res.data)
         document.querySelector("#repeat-text").textContent = res.data
     })
@@ -140,8 +140,9 @@ document.getElementById("repeat-button").addEventListener("click", repeatMyParam
 // CODE HERE
 
 const queryFunction = (event) => {
-    axios.get('http://localhost:3000/query-test?q=atlanta+georgia').then((res) => {
+    axios.get('http://localhost:3000/query-test?q=atlant&georgia').then((res) => {
         console.log(res.data)
+        document.querySelector("#repeat-text").textContent = res.data
     })
 }
 
@@ -202,12 +203,13 @@ function createFood(event) {
     event.preventDefault()
     foodInput = document.querySelector("input")
     body = {newFood: foodInput.value}
-    axios.post('http://localhost:3000/food', body).then((res) => {
-        console.log(res.data)
-    })
-    let new_para = document.createElement("p")
-    new_para.textContent = res.data
+    axios.post('http://localhost:3000/food', body).then((respo) => {
+        console.log(respo.data)
+        let new_para = document.createElement("p")
+    new_para.textContent = respo.data
     document.querySelector("body").appendChild(new_para)
+    })
+    
 }
 document.querySelector("form").addEventListener("submit", createFood)
 
